@@ -2,5 +2,160 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth ;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #9e3030;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #f2f0e9;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #171717;
+    color: #f2f0e9;
+    padding: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: #242424;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #d6a84b;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#btn-fundo {
+    background-color: #1c6b15;
+    color: #f2f0e9;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-fundo:hover {
+    background-color: #d6a84b;
+    color: #171717;
+}
+
+#btn-titulo {
+    background-color: #1c6b15;
+    color: #f2f0e9;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-titulo:hover {
+    background-color: #d6a84b;
+    color: #171717;
+}
+
+.texto-1:hover {
+    color: #d6a84b;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.galeria figure {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.galeria img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.galeria figcaption {
+    color:#d6a84b;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.galeria button {
+    background-color: #9e3030;
+    color: #f2f0e9;
+    border: none;
+    margin: 10px 5px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.galeria button:hover {
+    background-color: #d6a84b;
+    color: #171717;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #9e3030;
+    color: #f2f0e9;
+    border-radius: 8px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    display: inline-block;
+    color: #d6a84b;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover {
+    color: #171717;
+    transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
 }
